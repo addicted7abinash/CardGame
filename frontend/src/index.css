@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 10px;
+  grid-auto-rows: auto;
+}
+.card {
+  background: linear-gradient(to bottom right, #d290c4, #c65ef3);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 175px;
+  height: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #fff; /* Text color */
+}
+
+.card-image {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px 0;
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.attribute {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.attribute-label {
+  font-weight: bold;
+  flex-basis: 70px;
+}
+
+.attribute-value {
+  display: block;
+  width: 40px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid #000000;
+  border-radius: 40px;
+}
